@@ -1,19 +1,29 @@
 /* Estilos generales */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', Arial, sans-serif;
     margin: 0;
     padding: 0;
     line-height: 1.6;
     color: #333;
     background-color: #f4f4f9;
+    overflow-x: hidden;
 }
 
 /* Encabezado */
 header {
     text-align: center;
-    padding: 20px;
-    background: linear-gradient(135deg, #4caf50, #81c784);
+    padding: 40px 20px;
+    background: url('src/IMG/fondo.gif') no-repeat center center/cover;
     color: white;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.header-container {
+    background: rgba(0, 0, 0, 0.6); /* Oscurece el fondo para resaltar el texto */
+    padding: 20px;
+    border-radius: 10px;
+    display: inline-block;
 }
 
 .header-container img.profile-picture {
@@ -21,14 +31,19 @@ header {
     height: 150px;
     border-radius: 50%;
     margin-bottom: 10px;
+    border: 3px solid #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
 
 header h1 {
     margin: 10px 0;
+    font-size: 2rem;
+    font-weight: bold;
 }
 
 header p {
-    font-size: 18px;
+    font-size: 1.2rem;
+    margin: 5px 0;
 }
 
 /* Secciones principales */
@@ -38,13 +53,18 @@ main {
 
 section {
     margin-bottom: 30px;
+    padding: 15px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 section h2 {
     color: #4caf50;
     border-bottom: 2px solid #81c784;
     padding-bottom: 5px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
 }
 
 section ul {
@@ -58,13 +78,20 @@ section ul li {
 
 section ul li h3 {
     margin: 0;
-    font-size: 18px;
+    font-size: 1.2rem;
     color: #333;
+    font-weight: bold;
+}
+
+section ul li p {
+    margin: 5px 0;
+    color: #555;
 }
 
 /* Contacto */
 #contact span {
     font-weight: bold;
+    color: #4caf50;
 }
 
 /* Pie de página */
@@ -74,4 +101,33 @@ footer {
     background: #333;
     color: white;
     font-size: 14px;
+    position: relative;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    header {
+        padding: 20px 10px;
+    }
+
+    .header-container img.profile-picture {
+        width: 120px;
+        height: 120px;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    section {
+        padding: 10px;
+    }
+
+    section h2 {
+        font-size: 1.2rem;
+    }
 }
