@@ -7,12 +7,13 @@ body {
     color: #333;
     background-color: #f4f4f9;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 /* Encabezado */
 header {
     text-align: center;
-    padding: 40px 20px;
+    padding: 60px 20px;
     background: url('src/IMG/koi.gif') no-repeat center center/cover;
     color: white;
     position: relative;
@@ -20,13 +21,13 @@ header {
 }
 
 .header-container {
-    background: rgba(0, 0, 0, 0.6); /* Oscurece el fondo para resaltar el texto */
+    background: rgba(0, 0, 0, 0.6);
     padding: 20px;
     border-radius: 10px;
     display: inline-block;
 }
 
-.header-container img.profile-picture {
+.profile-picture {
     width: 150px;
     height: 150px;
     border-radius: 50%;
@@ -41,9 +42,10 @@ header h1 {
     font-weight: bold;
 }
 
-header p {
+header .job-title {
     font-size: 1.2rem;
     margin: 5px 0;
+    color: #81c784;
 }
 
 /* Secciones principales */
@@ -51,15 +53,15 @@ main {
     padding: 20px;
 }
 
-section {
+.section {
     margin-bottom: 30px;
-    padding: 15px;
+    padding: 20px;
     background: white;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-section h2 {
+.section h2 {
     color: #4caf50;
     border-bottom: 2px solid #81c784;
     padding-bottom: 5px;
@@ -67,24 +69,14 @@ section h2 {
     font-size: 1.5rem;
 }
 
-section ul {
+ul {
     list-style-type: none;
     padding: 0;
 }
 
-section ul li {
-    margin-bottom: 15px;
-}
-
-section ul li h3 {
-    margin: 0;
-    font-size: 1.2rem;
-    color: #333;
-    font-weight: bold;
-}
-
-section ul li p {
-    margin: 5px 0;
+li {
+    margin-bottom: 10px;
+    font-size: 1rem;
     color: #555;
 }
 
@@ -101,7 +93,6 @@ footer {
     background: #333;
     color: white;
     font-size: 14px;
-    position: relative;
 }
 
 /* Responsividad */
@@ -110,7 +101,7 @@ footer {
         padding: 20px 10px;
     }
 
-    .header-container img.profile-picture {
+    .profile-picture {
         width: 120px;
         height: 120px;
     }
@@ -119,15 +110,15 @@ footer {
         font-size: 1.5rem;
     }
 
-    header p {
+    header .job-title {
         font-size: 1rem;
     }
 
-    section {
-        padding: 10px;
+    .section {
+        padding: 15px;
     }
 
-    section h2 {
+    .section h2 {
         font-size: 1.2rem;
     }
 }
