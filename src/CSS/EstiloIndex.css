@@ -13,7 +13,7 @@ body {
 header {
     text-align: center;
     padding: 40px 20px;
-    background: url('src/IMG/fondo.gif') no-repeat center center/cover;
+    background: url('src/IMG/koi.gif') no-repeat center center/cover;
     color: white;
     position: relative;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
