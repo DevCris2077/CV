@@ -5,7 +5,7 @@ body {
     padding: 0;
     line-height: 1.6;
     color: #333;
-    background-color: #f4f4f9;
+    background-color: #2c2c2c; /* Fondo oscuro */
     overflow-x: hidden;
     scroll-behavior: smooth;
 }
@@ -14,59 +14,69 @@ body {
 header {
     text-align: center;
     padding: 60px 20px;
-    background: url('src/IMG/koi.gif') no-repeat center center/cover;
+    background: url('../IMG/arco.jpg') no-repeat center center/cover; /* Cambié la imagen de fondo */
     color: white;
     position: relative;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .header-container {
-    background: rgba(0, 0, 0, 0.6);
-    padding: 20px;
-    border-radius: 10px;
-    display: inline-block;
+    background: #5e4b8b; /* Fondo morado */
+    padding: 30px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    max-width: 900px;
+    margin: 0 auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
 
 .profile-picture {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    margin-bottom: 10px;
+    margin-right: 20px;
     border: 3px solid #fff;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
 
 header h1 {
-    margin: 10px 0;
-    font-size: 2rem;
+    margin: 0;
+    font-size: 2.5rem;
     font-weight: bold;
 }
 
 header .job-title {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     margin: 5px 0;
-    color: #81c784;
+    color: #fff;
 }
 
 /* Secciones principales */
 main {
-    padding: 20px;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
 }
 
 .section {
     margin-bottom: 30px;
-    padding: 20px;
-    background: white;
-    border-radius: 8px;
+    padding: 30px;
+    background: #fff; /* Fondo blanco */
+    border-radius: 15px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 900px;
 }
 
 .section h2 {
-    color: #4caf50;
-    border-bottom: 2px solid #81c784;
+    color: #5e4b8b; /* Morado */
+    border-bottom: 2px solid #5e4b8b;
     padding-bottom: 5px;
     margin-bottom: 15px;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
 }
 
 ul {
@@ -76,21 +86,21 @@ ul {
 
 li {
     margin-bottom: 10px;
-    font-size: 1rem;
+    font-size: 1.1rem;
     color: #555;
 }
 
 /* Contacto */
 #contact span {
     font-weight: bold;
-    color: #4caf50;
+    color: #5e4b8b; /* Morado */
 }
 
 /* Pie de página */
 footer {
     text-align: center;
     padding: 10px;
-    background: #333;
+    background: #3c3c3c; /* Fondo oscuro para el pie */
     color: white;
     font-size: 14px;
 }
@@ -107,7 +117,7 @@ footer {
     }
 
     header h1 {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
     }
 
     header .job-title {
@@ -115,10 +125,10 @@ footer {
     }
 
     .section {
-        padding: 15px;
+        padding: 20px;
     }
 
     .section h2 {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
     }
 }
